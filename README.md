@@ -48,8 +48,8 @@ with the native Android/iOS serializers).
 ## Versions
 
 - `@capacitor-firebase/firestore`: `8.2.0`
-- `@capacitor/core`: `7.x`
-- `firebase`: `11.x`
+- `@capacitor/core`: `8.x`
+- `firebase`: `12.x`
 - Platform: Web (desktop browser)
 
 ## Related
