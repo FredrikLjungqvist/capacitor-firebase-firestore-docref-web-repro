@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>capacitor-firebase/firestore — DocumentReference web bug repro</title>
+    <style>
+      body { font-family: system-ui, sans-serif; margin: 2rem; max-width: 56rem; }
+      button { font-size: 1rem; padding: 0.5rem 1rem; }
+      pre { background: #f4f4f4; padding: 1rem; white-space: pre-wrap; word-break: break-word; }
+    </style>
+  </head>
+  <body>
+    <h1>@capacitor-firebase/firestore 8.2.0 — DocumentReference web bug</h1>
+    <p>
+      Click <strong>Run repro</strong>. The page writes a document containing a
+      <code>DocumentReference</code> field, then reads it back via
+      <code>FirebaseFirestore.getDocument</code>. The read throws
+      <code>RangeError: Maximum call stack size exceeded</code>.
+    </p>
+    <button id="run">Run repro</button>
+    <pre id="log"></pre>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
